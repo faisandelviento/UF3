@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario Simple</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container ">
+    <h2>Formulario</h2>
+    <form id="miFormularioEj1" action="#" method="post">
+      <div class="form-group">
+        <label for="numero">Numero:</label>
+        <input type="number" id="numero" name="numero" placeholder="numero" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <div class="container ">
+    <h2>Formulario tarea 2</h2>
+    <form action="#" onsubmit="return validarFormulario()">
+      <div class="form-group">
+          <input type="email" id="email" placeholder="Correo electrónico" required >
+      </div>
+      <div class="form-group">
+          <input type="number" id="edad" placeholder="Edad (entre 18 y 67)" min="18" max="67" required>
+      </div>
+      <div class="form-group">
+          <input type="text" id="palabra" placeholder="Palabra" required>
+      </div>
+      <div class="form-group">
+          <button type="submit">Enviar</button>
+      </div>
+  </form>
+  <div>
+    <h2>Botones coockies</h2>
+    <button onclick="displayAllCookies()">Display All Cookies</button>
+    <button onclick="createCookie('Cookie1')">Create Cookie 1</button>
+    <button onclick="createCookie('Cookie2')">Create Cookie 2</button>
+    <button onclick="deleteCookie('Cookie1')">Delete Cookie 1</button>
+    <button onclick="deleteCookie('Cookie2')">Delete Cookie 2</button>
+  </div>
+  </div>
+
+</body>
+<script src="script.js"></script> 
+</html>
